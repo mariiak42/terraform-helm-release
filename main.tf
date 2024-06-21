@@ -1,10 +1,10 @@
 module "app" {
-    source = "./module"
-    namespace = "default"
-    name = "wordpress"
-    wait = false
-    chart = "./application"
-    values = [<<EOF
+  source    = "./module"
+  namespace = "default"
+  name      = "wordpress"
+  wait      = false
+  chart     = "./application"
+  values = [<<EOF
   replicaCount: 3
 
 image:
