@@ -1,21 +1,12 @@
-# USAGE
-### Please add the following code
-
+# Usage
+### Please add the following code 
+```
 module "app" {
-  source    = "./module"
+  source    = "mariiak42/release/helm"
   namespace = "default"
   name      = "wordpress"
   wait      = false
   chart     = "./application"
-  values = [<<EOF
-  replicaCount: 3
-
-image:
-  repository: nginx
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
-
-  EOF
-  ]
+  values = []
 }
+```
