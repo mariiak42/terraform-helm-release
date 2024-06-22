@@ -13,7 +13,7 @@ variable name {
 variable chart {
   description = "The chart of the app"
   type = string
-  default = "../application"
+  default = "./application"
 }
 
 variable wait {
